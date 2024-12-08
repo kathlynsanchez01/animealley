@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> AA MINI GAME 3 </title>
+    <link rel="stylesheet" href="AAgame3_stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="LOGO_04.2.png" height="50px" alt="Logo">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="samples.html">SAMPLE WORKS</a></li>
+                <li><a href="services3.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="games.html">MINI GAMES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="game-container">
+            <h1>THE LUCKY DIGIT</h1>
+            <p class="message">I'm thinking of a number between 1 and 100. <br> You have 5 attempts to guess it.</p>
+
+            <input type="number" id="userGuess" placeholder="Guess">
+            <button id="submitBtn">Submit</button>
+
+            <p class="message">Attempts left: <span id="attemptsLeft">5</span></p>
+            <p class="message">Guesses made: <span id="guessesMade">0</span></p>
+
+            <div class="result" id="result"></div>
+
+            <!-- Win message -->
+            <div id="win-message" style="display:none;">
+                <h2>You Win! 🎉 <b>You get a 5% discount voucher on one (1) of your order.</b> Please screenshot this alert and present to our customer service upon payment.</h2><br>
+                <img src="ali_fast_wave.gif" height="100px">
+                <h2>Screenshot should have date and time <br> to be considered valid.</h2>
+            </div>
+
+            <!-- Retry button -->
+            <button id="retryButton" style="display:none;" onclick="retryGame()">Retry</button>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Anime Alley, Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="JS_game3.js" defer></script>
+    
+</body>
+
+</html>

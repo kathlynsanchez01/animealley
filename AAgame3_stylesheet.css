@@ -1,0 +1,149 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px; /* To avoid content being hidden under fixed header */
+}
+
+header {
+    background-color: #491d52;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e68e35;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #491d52;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.game-container {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #491d52;
+}
+
+h4 {
+    font-size: 18px;
+    color: #666;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #491d52;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #e68e35;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.message {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #f44336;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 80px;
+    margin-right: 10px;
+}
+
+#win-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+    display: none;
+    margin-top: 20px;
+}
+
+#retryButton {
+    padding: 10px 20px;
+    background-color: #491d52;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#retryButton:hover {
+    background-color: #e68e35;
+}
+
+#retryButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
