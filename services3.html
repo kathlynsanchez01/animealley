@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> AA SERVICES </title>
+    <link rel="stylesheet" href="AA_stylesheet3.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="LOGO_04.2.png" height="50px">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="samples.html">SAMPLE WORKS</a></li>
+                <li><a href="services3.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="games.html">MINI GAMES</a></li>
+              </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="landing">
+            <div class="alleyway">
+                <h1> SERVICES </h1>
+                <p class="subparagraph">Commission your one-of-a-kind anime art here. <br>
+                    Let's get your vision started! Order now.
+                </p>
+            </div>
+        </section>
+
+        <!-- Floating images section -->
+        <section class="floating-images">
+            <div class="left">
+                <img src="service01.gif" alt="Sketch (Head Shots)" onclick="openModal(this)">
+                <img src="service03.gif" alt="Black and White (Detailed Head Shots)" onclick="openModal(this)">
+                <img src="service05.gif" alt="Full Color (Detailed Head Shots)" onclick="openModal(this)">
+                <img src="service07.gif" alt="Outline / Line Art (Detailed Half Body)" onclick="openModal(this)">
+            </div>
+
+            <div class="right">
+                <img src="service02.gif" alt="Sketch (Half Body)" onclick="openModal(this)">
+                <img src="service04.gif" alt="Black and White (Detailed Half Body)" onclick="openModal(this)">
+                <img src="service06.gif" alt="Full Color (Detailed Half Body)" onclick="openModal(this)">
+                <img src="service08.gif" alt="Animated Full Color (15 seconds)" onclick="openModal(this)">
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for ordering -->
+<div id="orderModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Service Order</h2>
+        <p id="modalImageTitle">You selected: </p>
+        <img id="modalImage" src="" alt="Product Image" style="width: 100%; margin-bottom: 20px;">
+
+        <form id="orderForm" action="checkout_page.html" method="GET">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <button type="submit">Checkout</button>
+        </form>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2024 Anime Alley, Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="ANIME_ALLEY_JS1.js"></script>
+</body>
+
+</html>

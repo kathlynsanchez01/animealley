@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> AA MINI GAME 2 </title>
+    <link rel="stylesheet" href="AAgame2_stylesheet.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="LOGO_04.2.png" height="50px" alt="Logo">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="samples.html">SAMPLE WORKS</a></li>
+                <li><a href="services3.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="games.html">MINI GAMES</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="game-container">
+            <h1>NAME THAT ANIME</h1>
+            <h4>Instructions: The player needs to match at least 8 out of 10 characters correctly within the 20-second time limit in order to win the game.</h4>
+            <button id="start-btn">Start Game</button>
+            <div id="game" style="display:none;">
+                <img id="anime-image" src="" alt="Anime Character" height="250px">
+                <div class="button-container">
+                    <button class="choice-btn" onclick="checkAnswer(0)">Choice 1</button>
+                    <button class="choice-btn" onclick="checkAnswer(1)">Choice 2</button>
+                    <button class="choice-btn" onclick="checkAnswer(2)">Choice 3</button>
+                </div>
+                <p id="score">Score: 0</p>
+                <p id="timer">Time Left: 20s</p>
+            </div>
+            <div id="win-message" style="display:none;">
+                <h2>You Win! 🎉 <b>You get a 5% discount voucher on one (1) of your order.</b> Please screenshot this alert and present to our customer service upon payment.</h2><br>
+                <img src="ali_fast_wave.gif" height="100px">
+                <h2>Screenshot should have date and time <br>
+                    to be considered valid.</h2>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Anime Alley, Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="JS_game2.js"></script>
+</body>
+</html>
